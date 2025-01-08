@@ -1,0 +1,13 @@
+*.rdi
+*.ilk
+*.raddbg
+.vs
+*.obj
+*.pdb
+*.exe
+*.sln
+
+
+GPATH
+GTAGS
+GRTAGS
