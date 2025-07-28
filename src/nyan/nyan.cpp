@@ -81,9 +81,9 @@ internal void update_and_render(OS_Event_List *events, OS_Handle window_handle, 
         frame_arena = arena_alloc(get_virtual_allocator(), MB(1));
 
         Arena *font_arena = arena_alloc(get_virtual_allocator(), MB(4));
-        default_fonts[FONT_DEFAULT] = load_font(font_arena, str8_lit("data/assets/fonts/RobotoMono.ttf"), 14);
+        default_fonts[FONT_DEFAULT] = load_font(font_arena, str8_lit("data/assets/fonts/RobotoMono.ttf"), 20);
 
-        default_fonts[FONT_CODE] = load_font(font_arena, str8_lit("data/assets/fonts/RobotoMono.ttf"), 14);
+        default_fonts[FONT_CODE] = load_font(font_arena, str8_lit("data/assets/fonts/RobotoMono.ttf"), 20);
 
         u32 icon_font_glyphs[] = { 87, 120, 33, 49, 85, 68, 76, 82, 123, 125, 67, 70, 35 };
         default_fonts[FONT_ICON] = load_icon_font(font_arena, str8_lit("data/assets/fonts/icons.ttf"), 16, icon_font_glyphs, ArrayCount(icon_font_glyphs));
