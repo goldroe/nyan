@@ -215,9 +215,9 @@ internal void update_and_render(OS_Event_List *events, OS_Handle window_handle, 
     }
 
     //@Note Minibuffer
-    {
+    if (0) {
         Minibuffer *minibuffer = g_minibuffer;
-        ui_txt_buffer(&minibuffer->text, str8_lit("foo"));
+        ui_txt_buffer(&minibuffer->text, str8_lit("minibuffer"));
 
         ui_set_next_pref_width(ui_pct(1.0f, 0.0f));
         ui_set_next_pref_height(ui_text_dim(1.0f, 1.0f));
